@@ -1,32 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="./assets/img/icons/logo-speed-collectibles.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/icons/logo-speed-collectibles.png"
+      type="image/x-icon"
+    />
     <title>Speed Collectibles</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Cabeçalho -->
     <header>
-        <a href="index.html"><img src="./assets/img/icons/logo-speed-collectibles.png" alt="Logo Speed Collectibles"></a>
-        <div class="menu">
-            <a href="#"><img src="./assets/img/icons/user.png" alt="ícone avatar" srcset=""></a>
-            <a href="#"><img src="./assets/img/icons/cart.png" alt="ícone carrinho de compras" srcset=""></a>
-        </div>
-
+      <a href="index.html"
+        ><img
+          src="./assets/img/icons/logo-speed-collectibles.png"
+          alt="Logo Speed Collectibles"
+      /></a>
+      <div class="menu">
+        <a href="#"
+          ><img src="./assets/img/icons/user.png" alt="ícone avatar" srcset=""
+        /></a>
+        <a href="#"
+          ><img
+            src="./assets/img/icons/cart.png"
+            alt="ícone carrinho de compras"
+            srcset=""
+        /></a>
+      </div>
     </header>
     <!-- Navegação -->
     <nav>
-        <ul>
-            <li><a href="./index.html">Início</a></li>
-            <li><a href="./sobre.html">Sobre</a></li>
-            <li><a href="./contato.html" class="active-page">Contato</a></li>
-        </ul>
+      <ul>
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./produtos.html">Produtos</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./contato.html" class="active-page">Contato</a></li>
+      </ul>
     </nav>
     <!-- Conteúdo -->
-    <main></main>
+    <main class="wout-padding">
+      <div class="contato-col">
+        <form class="contact-form" action="#" method="post">
+          <h2>Fale conosco</h2>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" class="nome" required />
 
-</body>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="email" required />
+
+          <label for="message">Mensagem:</label>
+          <textarea
+            id="message"
+            class="mensagem"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit" class="sumbit-btn">Enviar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        © 2025 Speed Collectibles. Todos os direitos reservados. Desenvolvido
+        por Abraão Santos, Breno Cruz, Emanoel Silva.
+      </p>
+    </footer>
+  </body>
 </html>

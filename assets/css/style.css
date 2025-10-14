@@ -84,7 +84,9 @@ header a img {
 header h1 {
   color: var(--navy);
 }
-
+h2{
+  color: var(--mid-night);
+}
 .menu {
   display: flex;
   flex-direction: row;
@@ -154,12 +156,14 @@ header h1 {
 
 nav {
   height: 5vh;
+  position: relative;
+  z-index: 100;
   width: 100vw;
   background: var(--navy);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav > ul {
@@ -181,12 +185,14 @@ nav > ul > li > a::after {
   content: "";
   display: block;
   background-color: var(--light-navy);
-  height: 2px;
+  height: 3px;
   width: 0;
   background: var(--water-green);
   transition: all 0.2s ease-in-out;
   position: absolute;
-  bottom: -10px;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 nav > ul > li > a:hover::after {
@@ -204,17 +210,20 @@ main {
   padding: 30px;
   gap: 10px;
   justify-content: center;
+  min-height: 73vh;
+  background-color: #fff;
+
 }
 
 .produto-card {
-  border: 1px solid var(--border-grey);
+  /* border: 1px solid var(--border-grey); */
   background-color: white;
   width: 280px;
   height: 420px;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
   grid-column: auto;
   margin: 20px 0;
 }
@@ -289,7 +298,78 @@ main {
   background-color: var(--light-navy);
 }
 
-footer{
+.wout-padding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.sobre-col, .contato-col {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 800px;
+}
+
+.perfil > img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px 0;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.resumo{
+  max-width: 600px;
+  text-align: center;
+  color: var(--text);
+  font-size: 16px;
+  margin: 10px;
+  line-height: 1.5;
+}
+
+.resumo > h2 {
+  color: var(--mid-night);
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.resumo > h4 {
+  color: var(--navy);
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.resumo > p {
+  margin-bottom: 10px;
+  text-align: justify;
+  color: var(--text-light);
+}
+
+.contact-col h2 {
+  color: var(--mid-night);
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.contato-col {
+  min-height: 73vh;  
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+footer {
   height: 10vh;
   width: 100vw;
   background: var(--navy);
