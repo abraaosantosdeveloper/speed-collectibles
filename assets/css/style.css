@@ -290,6 +290,16 @@ main {
 }
 
 
+.sumbit-btn{
+  border: 0;
+  background-color: var(--navy);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
 
 .produto-card {
   /* border: 1px solid var(--border-grey); */
@@ -400,7 +410,7 @@ main {
 }
 
 .resumo{
-  max-width: 600px;
+  max-width: 1200px;
   text-align: center;
   color: var(--text);
   font-size: 16px;
@@ -425,6 +435,21 @@ main {
   margin-bottom: 10px;
   text-align: justify;
   color: var(--text-light);
+}
+
+.resumos-lado-a-lado {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.resumos-lado-a-lado .resumo {
+  flex: 1;
+  min-width: 600px;
+  max-width: 750px;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 .contact-col h2 {
@@ -466,4 +491,30 @@ footer {
   justify-content: center;
   color: white;
   font-size: 14px;
+}
+
+.contact-form label {
+  font-weight: 500;
+  color: var(--mid-night);
+  margin-bottom: 4px;
+  margin-top: 12px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 14px;
+  border: 1.5px solid var(--border-grey);
+  border-radius: 10px;
+  font-size: 16px;
+  background: #fff;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--water-green);
+  box-shadow: 0 0 0 3px rgba(59, 151, 151, 0.15);
 }
